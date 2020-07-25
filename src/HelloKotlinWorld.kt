@@ -1,9 +1,6 @@
 fun main(args: Array<String>) {
-    var student = Student();
-    student.name = "soumo";
-    println("student name: ${student.name}");
+    var hello = Hello()
+    hello.name = "Soumo"
+    println(hello.name)
 }
 
-class Student {
-    var name = "";
-}
