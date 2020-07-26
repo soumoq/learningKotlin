@@ -1,20 +1,13 @@
 fun main(args: Array<String>) {
-    val hello: Hello = Hello()
-    var num1: Int? = null
-    var num2: Int = 8
 
-    var res = when (num2) {
-        7 -> {
-            "seven"
-        }
-        8 -> {
-            var res=num2
-            "eight $res"
-        }
-        else -> {
-            "give proper input"
-        }
+    var num = 'A'..'z'
+    var num1 = 20 downTo 1
+    for (a in num) {
+        println(a)
     }
-    println("Result is $res")
+
+    for (a in num1) {
+        println(a)
+    }
 }
 
