@@ -1,8 +1,11 @@
+
 import java.util.*
 
 fun main(args: Array<String>) {
-
-    println(add(5,6))
+    println(name(21))
 }
 
-fun add(a: Int, b: Int): Int = a+b
+@JvmOverloads
+fun name(age:Int , stClass: Int = 11):String{
+    return "Soumo $age"
+}
