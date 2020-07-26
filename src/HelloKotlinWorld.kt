@@ -1,13 +1,8 @@
 fun main(args: Array<String>) {
 
-    var num = 'A'..'z'
-    var num1 = 20 downTo 1
-    for (a in num) {
-        println(a)
-    }
-
-    for (a in num1) {
-        println(a)
+    var numb = listOf(1, 3, 2, 4)
+    for ((i, e) in numb.withIndex()) {
+        println("$i : $e")
     }
 }
 
