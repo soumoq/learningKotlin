@@ -2,7 +2,7 @@
 import java.util.*
 
 fun main(args: Array<String>) {
-    println(name(21))
+    println(name(age=21))
 }
 
 @JvmOverloads
