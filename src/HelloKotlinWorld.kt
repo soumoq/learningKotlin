@@ -2,13 +2,15 @@ import java.lang.*
 import java.util.*
 
 fun main(args: Array<String>) {
-    try {
-        throw Exception("try ex")
-    } catch (e: Exception) {
-        println(e)
-    }
-    finally {
-        println("in finally");
-    }
+    var th = ImplementThread()
+    th.start()
 }
 
+class ImplementThread : Thread()
+{
+    override fun run() {
+        println("Inside run")
+        Thread.sleep(2000);
+        println("End run")
+    }
+}
