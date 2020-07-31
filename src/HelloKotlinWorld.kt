@@ -2,8 +2,9 @@ import java.lang.*
 import java.util.*
 
 fun main(args: Array<String>) {
-    var b = B()
+    val b = B()
     b.fun1()
+    println(b.fun1(5))
 
 }
 
@@ -22,5 +23,10 @@ class B : A()
     override fun fun1()
     {
         println("fun 1")
+    }
+
+    fun fun1(a :Int) : Int
+    {
+        return a
     }
 }
