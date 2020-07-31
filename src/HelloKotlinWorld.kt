@@ -5,10 +5,15 @@ fun main(args: Array<String>) {
     val b = B()
     b.fun1()
     println(b.fun1(5))
+    b.a()
 
 }
 
-abstract class A {
+interface Inter1{
+    fun a()
+}
+
+abstract class A : Inter1 {
     init {
         println("A")
     }
@@ -23,6 +28,10 @@ class B : A()
     override fun fun1()
     {
         println("fun 1")
+    }
+
+    override fun a() {
+        println("Inside a interface")
     }
 
     fun fun1(a :Int) : Int
