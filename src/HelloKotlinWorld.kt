@@ -1,6 +1,7 @@
 import java.lang.*
 import java.util.*
 
+
 fun main(args: Array<String>) {
     val b = B()
     b.fun1()
@@ -22,6 +23,7 @@ abstract class A : Inter1 {
 
 class B : A()
 {
+    val name : String = "Soumo";
     init {
         println("B")
     }
