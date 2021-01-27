@@ -1,16 +1,24 @@
 import java.util.*;
+
 public class Hello {
     private String name;
+
     public static void main(String[] args) {
-        String string = new String("Soumo");
-        System.out.println(string);
+        Z z = new Z("5");
+    }
+}
+
+class Z {
+    Z() {
+        System.out.println("Default");
     }
 
-    public String getName() {
-        return name;
+    Z(int i) {
+        System.out.println("int");
     }
 
-    public void setName(String name) {
-        this.name = name;
+    Z(String i) {
+        this();
+        System.out.println("String");
     }
 }
