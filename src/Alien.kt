@@ -1,7 +1,7 @@
-class Alien {
-    var skills: String? = null
+fun main(args: Array<String>){
+    println("S")
+}
 
-    fun show() {
-        println(skills)
-    }
+class Alien {
+
 }

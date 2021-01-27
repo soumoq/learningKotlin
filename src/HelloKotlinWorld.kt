@@ -5,9 +5,8 @@ import java.util.*
 fun main(args: Array<String>) {
     val b = B()
     b.fun1()
-    println(b.fun1(5))
+    println(b.fun1(10))
     b.a()
-
 }
 
 interface Inter1{
