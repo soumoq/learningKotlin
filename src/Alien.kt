@@ -1,22 +1,16 @@
-import javax.naming.Context
+import java.util.*
 
 fun main(args: Array<String>) {
-    val human = object : Human {
-        override fun think() {
-            println("Think")
-        }
+    val list = ArrayList<Int>()
+    list.add(5)
+    list.add(2)
+    list.add(5)
+    list.add(6)
 
-        override fun breakThink() {
-            TODO("Not yet implemented")
-        }
+    list.forEach { println(it) }
 
-    }
+    println()
+    println()
 
-    human.think()
+    println( list.filter { it % 2 == 0 })
 }
-
-interface Human {
-    fun think()
-    fun breakThink()
-}
-
