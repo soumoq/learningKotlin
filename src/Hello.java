@@ -4,7 +4,11 @@ public class Hello {
     private String name;
 
     public static void main(String[] args) {
-        Z z = new Z("5");
+        ArrayList<Laptop> laptops = new ArrayList<>();
+        laptops.add(new Laptop("Hp", 3000));
+        Shop.INSTANCE.setLaptop(laptops);
+        Shop.INSTANCE.show(laptops.get(0));
+
     }
 }
 
