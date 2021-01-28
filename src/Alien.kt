@@ -1,25 +1,14 @@
 fun main(args: Array<String>) {
-    var z = Z("abcd")
-    println(z.returnString())
+    var l1 = Laptop("dell", 2000)
+    var l2 = Laptop("dell", 2000)
+    var l3 = l1.copy();
+    println(l2 == l3)
 
 }
 
-class Z {
-    var s: String? = null
-
-    constructor() {
-        println("Default")
+data class Laptop(val name: String, val price: Int) {
+    fun show() {
+        println("Show")
     }
 
-    constructor(s: String) {
-        this.s = s
-    }
-
-    constructor(i: Int) {
-        println("Int")
-    }
-
-    fun returnString(): String? {
-        return s;
-    }
 }
